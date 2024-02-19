@@ -1,0 +1,34 @@
+.wrap {
+    width: calc(100% - 40px);
+}
+
+.wrap h2 {
+    margin: 15px 0 15px;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    width: 32%;
+    margin: 10px 0;
+}
+
+.name {
+    text-decoration: underline;
+    color: #aa55c5;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.m10 {
+    margin: 10px 0;
+}
+
+.content span {
+    padding: 2px;
+    background-color: blue;
+    color: #fff;
+}

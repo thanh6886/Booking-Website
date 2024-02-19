@@ -1,0 +1,49 @@
+.wrapper {
+  margin: 48px 80px 60px 80px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 10px 8px;
+  background-color: #32a4c1;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: #fff;
+  font-weight: 700;
+}
+
+.table td {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+}
+
+.table tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.icon {
+  padding: 4px;
+  background-color: #aaa;
+  border-radius: 5px;
+  color: #258217;
+}
+
+.booked {
+  background-color: #f69685;
+}
+
+.checkin {
+  background-color: #39d139;
+}
+
+.checkout {
+  background-color: #d3d0f2;
+}

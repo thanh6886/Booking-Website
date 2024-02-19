@@ -1,0 +1,95 @@
+.wrap {
+    width: 1180px;
+    margin: 50px auto;
+    scroll-behavior: smooth;
+}
+
+.basic-info {
+    margin: 0 10px 20px 10px;
+    position: relative;
+}
+
+.basic-info p {
+    margin: 10px 0;
+}
+
+.address {
+    font-size: 12px;
+}
+
+.blue {
+    color: #0071c5;
+}
+
+.green {
+    color: green;
+}
+
+.wrap-img {
+    margin: 0 5px 20px 5px;
+}
+
+.wrap-img img {
+    margin: 0 5px 5px 5px;
+}
+
+.detail {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    margin-left: 8px;
+}
+
+.content h2 {
+    margin: 10px 0;
+}
+
+.booking {
+    width: 23%;
+    padding: 20px;
+    background-color: #ebf3ff;
+    margin-right: 10px;
+    margin-left: 32px;
+}
+
+.booking h3 {
+    margin: 15px 0;
+}
+
+.booking p {
+    margin: 15px 0;
+}
+
+.price9night {
+    font-size: 25px;
+}
+
+.gray {
+    color: #666;
+}
+
+.button {
+    color: #fff;
+    background-color: #0071c2;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0051c2;
+    cursor: pointer;
+}
+
+.posri {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.w100 {
+    width: 100%;
+}

@@ -1,0 +1,119 @@
+.form-booking {
+  display: grid;
+  grid-template-areas: 
+  'dates reserve-info' 
+  'select-rooms select-rooms'
+  'total-bill total-bill';
+  grid-template-columns: auto 1fr;
+  margin: 64px 8px;
+  gap: 32px;
+}
+
+.form-booking h3 {
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.dates {
+  grid-area: dates;
+}
+
+.big-size {
+  font-size: 14px !important;
+}
+
+.reserve-info {
+  grid-area: reserve-info;
+}
+
+.reserve-info label {
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.reserve-info label:first-child {
+  margin-top: 0;
+}
+
+.reserve-info input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.select-rooms {
+  grid-area: select-rooms;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  row-gap: 32px;
+  column-gap: 80px;
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.tick-room label {
+  color: #999;
+}
+
+.space-between {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.tick-rooms {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.tick-room {
+  position: relative;
+  margin: 0 8px;
+}
+
+.tick-room label {
+  position: absolute;
+  top: -16px;
+  right: -6px;
+  font-size: 14px;
+}
+
+.tick-room input {
+  transform: scale(1.2);
+}
+
+.total-bill {
+  grid-area: total-bill;
+}
+
+.confirm select {
+  padding: 12px 120px 12px 16px;
+  background-color: #eee;
+  margin-right: 56px;
+}
+
+.confirm button {
+  padding: 13px 40px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0071c2;
+  border-radius: 5px;
+  border: none;
+}
+
+.confirm button:hover {
+  background-color: #1398f8;
+  cursor: pointer;
+}

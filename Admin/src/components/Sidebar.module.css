@@ -1,0 +1,48 @@
+.container {
+  border-right: 1px solid #999;
+  height: calc(100vh - 16px);
+}
+
+.logo {
+  border-bottom: 1px solid #999;
+  text-align: center;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #7451f8;
+}
+
+.main {
+  padding-left: 12px;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-text {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.8rem;
+  margin: 16px 0 8px 0;
+}
+
+.nav-link {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #555;
+  margin: 4px 0 4px 8px;
+}
+
+.nav-link svg {
+  margin-right: 8px;
+  color: #7451f8;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

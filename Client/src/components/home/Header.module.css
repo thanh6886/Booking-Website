@@ -1,0 +1,199 @@
+.wrap-header {
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.header {
+  padding: 40px 20px 80px;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+.header h1 {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.header p {
+  padding-bottom: 15px;
+}
+
+.header button {
+  padding: 8px;
+}
+
+.form {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 3px solid #febb02;
+  border-radius: 3px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  max-width: 1160px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+}
+
+.form i {
+  color: #ccc;
+}
+
+.form button {
+  display: inline-block;
+  width: 100px;
+  flex: 0.5;
+  padding: 8px;
+}
+
+.form > div,
+button {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.form .roomCount {
+  flex-grow: 0.5;
+}
+
+.form label {
+  display: inline-block;
+}
+
+.form input {
+  box-sizing: border-box;
+  border: none;
+  padding: 10px;
+}
+
+/* .form > div:nth-child(2) {
+    margin: 0 100px;
+} */
+
+.button {
+  background-color: #0071c2;
+  border: none;
+  color: #fff;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #005199;
+}
+
+.divDate {
+  position: relative;
+  color: #999;
+  font-size: 0.9rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.date {
+  position: absolute;
+}
+
+.date-picker-container {
+  position: absolute;
+  z-index: 10;
+  top: 419px;
+  left: 373px;
+}
+
+.input-ccc {
+  color: #999;
+}
+
+.roomCount {
+  display: flex;
+}
+
+.roomCount div {
+  display: inline-block;
+}
+
+.roomCount div:first-child {
+  max-width: fit-content;
+}
+
+.roomCount input {
+  width: 200px;
+}
+
+.roomCount div:nth-child(2) {
+  margin: 0;
+}
+
+.countInput {
+  cursor: pointer;
+}
+
+.qtyInput {
+  font-size: 0.9rem;
+  color: #999;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.options {
+  position: absolute;
+  z-index: 2;
+  top: 430px;
+  left: 63%;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}

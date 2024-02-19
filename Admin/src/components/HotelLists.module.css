@@ -1,0 +1,87 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #666;
+}
+
+.table tr {
+  border: 1px solid #999;
+}
+
+.table td {
+ margin-left: 8px;
+}
+
+.table thead td {
+  font-weight: 500;
+  padding: 12px 8px;
+  font-size: 0.9rem;
+}
+
+.table tbody td {
+  min-height: 36px;
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+.border-bottom {
+  position: relative;
+}
+
+.border-bottom::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #ccc;
+  border-radius: 5px;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.wrap-icon {
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.wrap-icon:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.title-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.title {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.add {
+  font-size: 0.9rem;
+  color: #3a9b69;
+  border: 1.5px solid #84c284;
+  background-color: #fff;
+  line-height: 1.2;
+}
+
+.delete {
+  color: #fb1140;
+  border: 1px dashed #ec4264;
+  background-color: #fff;
+}
+
+.edit {
+  margin-left: 16px;
+  color: #fb7c05;
+  border: 1px dashed #fa9332;
+  background-color: #fff;
+}

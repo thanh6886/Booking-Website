@@ -1,0 +1,49 @@
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003580;
+}
+
+.container {
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container button {
+    background-color: #0071c2;
+    color: #fff;
+}
+
+.slogan{
+    font-size: 30px;
+    padding: 16px 0;
+}
+
+.content{
+    padding: 8px 0;
+}
+
+.form {
+    padding: 8px 0;
+}
+
+.form input {
+    padding: 16px;
+    margin-right: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form button {
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: #005199;
+}

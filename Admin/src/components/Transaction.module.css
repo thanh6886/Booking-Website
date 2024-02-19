@@ -1,0 +1,96 @@
+.container {
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px, rgba(0, 0, 0, 0.01) -1px -1px 4px;
+  color: #444;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* transactions table */
+.wrap-trans {
+  border: 1px solid #aaa;
+  font-size: 0.9rem;
+}
+
+.row {
+  display: flex;
+  padding: 4px;
+  border-bottom: 1px solid #aaa;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.p16 {
+  padding: 8px 4px !important;
+}
+
+.col {
+  padding-left: 4px;
+  display: inline-block;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.head::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-40%);
+  width: 2px;
+  height: 14px;
+  background-color: #aaa;
+}
+
+.pagination {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.pagination svg {
+  font-size: 14px;
+  padding: 8px;
+}
+
+.pagination svg:first-child {
+  margin-left: 16px;
+}
+
+.pagination svg:hover {
+  background-color: #999;
+  cursor: pointer;
+}
+
+.wrap-icon {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.booked {
+  color: #438f2f;
+  background-color: #f5b8ad;
+}
+
+.checkin {
+  color: #0e940e;
+  background-color: #39d139;
+}
+
+.checkout {
+  color: #39d139;
+  background-color: #dedbfd;
+}

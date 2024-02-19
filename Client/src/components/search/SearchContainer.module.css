@@ -1,0 +1,22 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 40px 0;
+    width: 1180px;
+    display: flex;
+}
+
+.left {
+    width: 20%;
+    min-width: 200px;
+    margin: 0 10px;
+}
+
+.right {
+    margin: 0 10px;
+    width: 80%;
+}

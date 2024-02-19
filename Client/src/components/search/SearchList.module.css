@@ -1,0 +1,76 @@
+.place {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.img {
+    padding: 10px;
+}
+
+.detail {
+    padding: 10px;
+    width: 50%;
+}
+
+.detail h4 {
+    margin: 5px 0;
+}
+
+.name {
+    color: #0071c2;
+}
+
+.free {
+    background-color: #008009;
+    color: #fff;
+    padding: 4px 2px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.green {
+    color: green;
+    margin: 5px 0;
+}
+
+.mores {
+    padding: 10px;
+    width: 20%;
+}
+
+.rate {
+    background-color: #003580;
+    color: #fff;
+    padding: 2px 3px;
+    font-weight: 500;
+    float:right;
+}
+
+.price {
+    font-size: 25px;
+    text-align: right;
+}
+
+.gray {
+    color: gray;
+    text-align: right;
+}
+
+.mb80 {
+    margin-bottom: 80px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0071c2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.title {
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px, rgba(0, 0, 0, 0.01) -1px -1px 4px;
+  color: #999;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.form {
+  padding: 16px 32px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px, rgba(0, 0, 0, 0.01) -1px -1px 4px;
+  color: #555;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 40%;
+}
+
+.input {
+  margin-bottom: 8px;
+}
+
+.input label {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.input input, textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input input {
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 4px;
+}
+
+.rooms {
+  border: 1px solid #333;
+  border-radius: 3px;
+  height: 70px;
+  overflow-y: scroll;
+}
+
+.rooms p {
+  padding: 4px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.tar {
+  text-align: right;
+}
+
+.btn {
+  margin-top: 16px;
+  padding: 8px 32px;
+  background-color: #008080;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #004e4e;
+  cursor: pointer;
+}

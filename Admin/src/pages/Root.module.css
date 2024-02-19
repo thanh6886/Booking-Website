@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: 15% auto;
+  margin: 8px 32px;
+}
+
+.decor {
+  height: 50.5px;
+  border-bottom: 1px solid #999;
+}
+
+.main {
+  padding: 16px;
+}

@@ -1,0 +1,15 @@
+.active {
+    border: 1px solid #fff !important;
+}
+
+.item {
+    padding: 10px;
+    margin-right: 25px;
+    border-radius: 20px;
+    border: 1px solid #003580;
+}
+
+.item:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
