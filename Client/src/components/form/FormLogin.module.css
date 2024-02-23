@@ -41,7 +41,8 @@
 }
 
 .underline {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #fff;
 }
 
 @media screen and (max-width: 600px) {
@@ -58,4 +59,27 @@
 }
 .form p {
   margin-top: 10px;
+}
+._button {
+  display: inline-block; /* Display as inline block */
+  padding: 10px 15px; /* Add padding for spacing inside the button-like div */
+  margin-top: 10px;
+  width: 115px;
+  background-color: #4caf50; /* Set background color */
+  color: white; /* Set text color */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none; /* Remove underlines from links */
+  font-size: 16px; /* Set font size */
+  border: 1px solid #4caf50; /* Add a border */
+  cursor: pointer; /* Change cursor on hover to indicate interactivity */
+  border-radius: 4px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add smooth transition for background color */
+}
+._button:hover {
+  background-color: #45a049; /* Change background color on hover */
+}
+.home_page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

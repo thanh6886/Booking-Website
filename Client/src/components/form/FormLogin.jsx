@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import classes from "./FormLogin.module.css";
 import url from "../../utils/url";
-import Headerpage from "../home/Headerpage";
-import Footer from "../shared/Footer";
 
 const FormLogin = () => {
   const navigate = useNavigate();
@@ -37,7 +35,6 @@ const FormLogin = () => {
 
   return (
     <React.Fragment>
-      <Headerpage />
       <div className={classes.container}>
         <form className={classes.form}>
           <h1>Login</h1>
@@ -59,15 +56,17 @@ const FormLogin = () => {
           <button type="button" onClick={loginAccount}>
             Login
           </button>
-          <p>
-            Don't have an account ?{" "}
-            <Link className={classes.underline} to="/signup">
-              Signup
+          <div className={classes.home_page}>
+            <Link to={url.home} className={classes.underline}>
+              <div className={classes._button}>Go to Home</div>
             </Link>
-          </p>
+
+            <Link to={`${url.home}/signup`} className={classes.underline}>
+              <div className={classes._button}>Signup</div>
+            </Link>
+          </div>
         </form>
       </div>
-      <Footer />
     </React.Fragment>
   );
 };
