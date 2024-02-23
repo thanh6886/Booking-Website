@@ -1,34 +1,47 @@
 .wrap {
-    width: calc(100% - 40px);
+  width: calc(100% - 40px);
 }
 
 .wrap h2 {
-    margin: 15px 0 15px;
+  margin: 15px 0 15px;
 }
 
 .lists {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .list {
-    width: 32%;
-    margin: 10px 0;
+  width: 32%;
+  margin: 10px 0;
 }
 
 .name {
-    text-decoration: underline;
-    color: #aa55c5;
-    cursor: pointer;
-    display: inline-block;
+  text-decoration: underline;
+  color: #aa55c5;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .m10 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .content span {
-    padding: 2px;
-    background-color: blue;
-    color: #fff;
+  padding: 2px;
+  background-color: blue;
+  color: #fff;
+}
+
+.img {
+  position: relative;
+  overflow: hidden;
+  display: inline-block; /* Để chỉ chiếm chiều rộng của ảnh */
+}
+img:hover {
+  transform: scale(1.1);
+}
+.item {
+  transition: transform 0.4s ease-in-out; /* Hiệu ứng diễn ra trong 0.3s với hiệu ứng ease-in-out */
+  display: block; /* Loại bỏ khoảng trắng dưới ảnh */
 }

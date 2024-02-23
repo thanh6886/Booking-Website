@@ -1,31 +1,31 @@
-import { useContext, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import styles from './Header.module.css'
-import { DateRange } from 'react-date-range'
+import { useContext, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import styles from "./Header.module.css";
+import { DateRange } from "react-date-range";
 
-import 'react-date-range/dist/styles.css' // css of date-range model
-import 'react-date-range/dist/theme/default.css' // css of date-range model
-import SearchDataContext from '../../store/search-data-context'
+import "react-date-range/dist/styles.css"; // css of date-range model
+import "react-date-range/dist/theme/default.css"; // css of date-range model
+import SearchDataContext from "../../store/search-data-context";
 
 // show options header
 function Header() {
-  const { findHotels } = useContext(SearchDataContext)
-  const navigate = useNavigate()
-  const [isFocusDateInput, setIsFocusDateInput] = useState(false)
-  const [options, setOptions] = useState({ adult: 1, children: 0, room: 1 })
-  const [openOptions, setOpenOptions] = useState(false)
+  const { findHotels } = useContext(SearchDataContext);
+  const navigate = useNavigate();
+  const [isFocusDateInput, setIsFocusDateInput] = useState(false);
+  const [options, setOptions] = useState({ adult: 1, children: 0, room: 1 });
+  const [openOptions, setOpenOptions] = useState(false);
   const [dateState, setDateState] = useState([
     {
       startDate: new Date(),
       endDate: new Date(),
-      key: 'selection',
+      key: "selection",
     },
-  ])
-  const destinationInput = useRef()
+  ]);
+  const destinationInput = useRef();
 
   // navigate page to /search
-  const clickHandler = event => {
-    event.preventDefault()
+  const clickHandler = (event) => {
+    event.preventDefault();
     findHotels(
       {
         destination: destinationInput.current.value,
@@ -35,41 +35,41 @@ function Header() {
         roomQty: options.room,
       },
       () => {
-        navigate('/search')
+        navigate("/search");
       }
-    )
-  }
+    );
+  };
 
   const handleOption = (name, operation) => {
-    setOptions(prev => {
+    setOptions((prev) => {
       return {
         ...prev,
-        [name]: operation === 'i' ? options[name] + 1 : options[name] - 1,
-      }
-    })
-  }
+        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+      };
+    });
+  };
 
   const showDateInputHandler = () => {
-    setIsFocusDateInput(prevState => !prevState)
-  }
+    setIsFocusDateInput((prevState) => !prevState);
+  };
 
   // convert type of dateState to mm/dd/yyyy
-  let startDate = dateState[0].startDate.toLocaleDateString()
-  let endDate = dateState[0].endDate.toLocaleDateString()
+  let startDate = dateState[0].startDate.toLocaleDateString();
+  let endDate = dateState[0].endDate.toLocaleDateString();
 
   return (
     <>
       {/* model date-picker */}
       {isFocusDateInput && (
         <div
-          onMouseDown={e => e.preventDefault()}
-          className={styles['date-picker-container']}
+          onMouseDown={(e) => e.preventDefault()}
+          className={styles["date-picker-container"]}
         >
           <DateRange
             editableDateInputs={true}
             moveRangeOnFirstSelection={false}
             minDate={new Date()}
-            onChange={item => setDateState([item.selection])}
+            onChange={(item) => setDateState([item.selection])}
             ranges={dateState}
           />
         </div>
@@ -83,7 +83,7 @@ function Header() {
               <button
                 disabled={options.adult <= 1}
                 className={styles.optionCounterButton}
-                onClick={() => handleOption('adult', 'd')}
+                onClick={() => handleOption("adult", "d")}
               >
                 -
               </button>
@@ -92,7 +92,7 @@ function Header() {
               </span>
               <button
                 className={styles.optionCounterButton}
-                onClick={() => handleOption('adult', 'i')}
+                onClick={() => handleOption("adult", "i")}
               >
                 +
               </button>
@@ -104,7 +104,7 @@ function Header() {
               <button
                 disabled={options.children <= 0}
                 className={styles.optionCounterButton}
-                onClick={() => handleOption('children', 'd')}
+                onClick={() => handleOption("children", "d")}
               >
                 -
               </button>
@@ -113,7 +113,7 @@ function Header() {
               </span>
               <button
                 className={styles.optionCounterButton}
-                onClick={() => handleOption('children', 'i')}
+                onClick={() => handleOption("children", "i")}
               >
                 +
               </button>
@@ -125,14 +125,14 @@ function Header() {
               <button
                 disabled={options.room <= 1}
                 className={styles.optionCounterButton}
-                onClick={() => handleOption('room', 'd')}
+                onClick={() => handleOption("room", "d")}
               >
                 -
               </button>
               <span className={styles.optionCounterNumber}>{options.room}</span>
               <button
                 className={styles.optionCounterButton}
-                onClick={() => handleOption('room', 'i')}
+                onClick={() => handleOption("room", "i")}
               >
                 +
               </button>
@@ -142,7 +142,7 @@ function Header() {
       )}
 
       {/* HEADER */}
-      <header className={styles['wrap-header']}>
+      <header className={styles["wrap-header"]}>
         {/* MESSAGE PART */}
         <div className={styles.header}>
           <h1>A lifetime of discounts? It's Genius.</h1>
@@ -150,7 +150,6 @@ function Header() {
             Get rewarded for your travels - unlock instant savings of 10% or
             more with a free account
           </p>
-          <button className={styles.button}>Sign in / Register</button>
         </div>
         {/* FORM SEARCH */}
         <form className={styles.form}>
@@ -185,7 +184,7 @@ function Header() {
             </div>
             <div
               className={styles.qtyInput}
-              onClick={() => setOpenOptions(prevState => !prevState)}
+              onClick={() => setOpenOptions((prevState) => !prevState)}
             >
               1 adult - 0 children - 1 room
             </div>
@@ -197,7 +196,7 @@ function Header() {
         </form>
       </header>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;
