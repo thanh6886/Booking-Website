@@ -1,7 +1,0 @@
-{
-  "env": {
-    "DB_USER": "root",
-    "DB_PASSWORD": "Zz12345678",
-    "DB_DEFAULT_DATABASE": "asm2"
-  }
-}
