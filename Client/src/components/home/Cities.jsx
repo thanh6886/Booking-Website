@@ -9,7 +9,7 @@ function Cities({ propsByArea }) {
   const { findHotels } = useContext(SearchDataContext);
   const cities = [
     {
-      name: "Ha Noi",
+      name: "ha noi",
       props: propsByArea.HN,
       image: "./images/hanoi-3609871_1920.jpg",
     },

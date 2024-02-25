@@ -1,22 +1,22 @@
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .more-options {
-    width: calc(100% - 40px);
-    max-width: 1200px;
-    margin: 32px auto;
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 32px auto;
 }
 
 .wrap-options {
-    display: flex;
-    justify-content: space-between;
-    margin-left: -20px;
-    margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: 20px;
 }
 
 /* .list {
@@ -24,12 +24,15 @@ a {
 } */
 
 .list li a {
-    font-size: 14px;
-    color:#05178bcb;
-    opacity: 0.7;
-    font-weight: 600;
+  font-size: 14px;
+  color: #05178bcb;
+  opacity: 0.7;
+  font-weight: 600;
 }
 
 .list li a:hover {
-    opacity: 1;
+  opacity: 1;
+}
+.container {
+  background-color: rgb(167, 166, 219);
 }

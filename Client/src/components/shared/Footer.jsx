@@ -4,7 +4,7 @@ import Form from "./Form";
 
 function Footer() {
   return (
-    <footer>
+    <footer className={styles.container}>
       <Form />
       <div className={styles["more-options"]}>
         <div className={styles["wrap-options"]}>
